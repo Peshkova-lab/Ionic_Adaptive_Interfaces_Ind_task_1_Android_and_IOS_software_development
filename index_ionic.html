@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no,
+            initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X_UA_Compatible" content="ie=edge">
+
+        <script type="module"
+            src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js">
+        </script>
+
+        <script nomodule
+            src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js">
+        </script>
+
+        <script type="module"
+        src="node_modules/@ionic/core/dist/ionic/index.js"></script>
+
+        <script nomodule
+            src="node_modules/@ionic/core/dist/ionic/index.esm.js">
+        </script>
+
+        <link rel="stylesheet" 
+        href="https://unpkg.com/@ionic/core@4.0.0/css/ionic.bundle.css">
+
+        
+        <script src="code/data.js"></script>
+
+        <script src="code/my_ionic.js"></script>
+
+        <title>Recipes</title>
+    </head>
+    <body>
+
+
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Recipes</ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <section id="main">
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="12" size-md="6" offset-md="3">
+                        <ion-button id="add" color="success" size="large">
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="12" size-md="6" offset-md="3">
+                        <ion-list id="list">
+                            <ion-list-header>
+                                <ion-label>Number</ion-label>
+                                <ion-label>Doctor</ion-label>
+                                <ion-label>Patient</ion-label>
+                                <ion-label></ion-label>
+                            </ion-list-header>
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </section>
+
+        <section id="edit">
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="12" size-md="6" offset-md="3">
+                        <ion-item>
+                            <ion-label position="floating">Number</ion-label>
+                            <ion-input id="number"></ion-input>
+                        </ion-item>
+                        
+                        <ion-item>
+                            <ion-label position="floating">Doctor`s FIO</ion-label>
+                            <ion-input id="doctor"></ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label position="floating">Patient`s FIO</ion-label>
+                            <ion-input id="patient"></ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label position="floating">Patient`s birts date</ion-label>
+                            <ion-input id="birth"></ion-input>
+                        </ion-item>
+
+                        <ion-button id="save" color="primary" size="medium"
+                        float-right style="margin-top: 20px;">
+                            <ion-icon name="checkmark"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </section>
+    </body>
+</html>
